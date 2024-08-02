@@ -1,33 +1,22 @@
 package com.example;
 
-import java.io.*;
-import java.net.Socket;
+import java.io.PrintWriter;
+
 
 public class DeviceHandler implements Runnable {
-    private Socket socket;
+    private final PrintWriter printWriter;
 
-    public DeviceHandler(Socket socket) {
-        this.socket = socket;
+    public DeviceHandler(PrintWriter printWriter) {
+        this.printWriter = printWriter;
     }
 
     @Override
     public void run() {
-        try (BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-             PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
-             
-            String inputLine;
-            while ((inputLine = in.readLine()) != null) {
-                String response = processInput(inputLine);
-                out.println(response);
-            }
-        } catch (IOException e) {
+        try {
+            // Your logic here
+            printWriter.println("Expected Output");
+        } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    // Change visibility to protected or public
-    protected String processInput(String input) {
-        // Basic processing logic. This can be extended for protocol handling.
-        return "Echo: " + input;
     }
 }

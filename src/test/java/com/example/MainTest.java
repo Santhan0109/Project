@@ -1,33 +1,26 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.*;
-import java.net.Socket;
+import java.io.PrintWriter;
+
+import org.junit.jupiter.api.Test;
 
 public class MainTest {
 
     @Test
-    public void testDeviceHandler() throws IOException {
-        // Mock the Socket and streams
-        Socket mockSocket = mock(Socket.class);
-        InputStream mockInputStream = mock(InputStream.class);
-        OutputStream mockOutputStream = mock(OutputStream.class);
-        PrintWriter mockWriter = mock(PrintWriter.class);
+    void testMain() {
+        // Create a mock PrintWriter
+        PrintWriter printWriter = mock(PrintWriter.class);
+        DeviceHandler deviceHandler = new DeviceHandler(printWriter);
 
-        // Set up the mocks
-        when(mockSocket.getInputStream()).thenReturn(mockInputStream);
-        when(mockSocket.getOutputStream()).thenReturn(mockOutputStream);
+        // Use the mock PrintWriter in the DeviceHandler
+        // Ensure that it interacts correctly with the DeviceHandler
 
-        // Create a DeviceHandler instance with the mocked socket
-        DeviceHandler deviceHandler = new DeviceHandler(mockSocket);
+        // Simulate the main method's behavior
+        deviceHandler.run(); 
 
-        // Run the device handler logic
-        deviceHandler.run();
-
-        // Verify interactions with mocks
-        verify(mockWriter).println("Expected Output");
+        // Verify interactions with PrintWriter
+        verify(printWriter).println("Expected Output");
     }
 }
