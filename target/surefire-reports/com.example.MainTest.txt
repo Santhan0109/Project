@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.example.MainTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.479 s <<< FAILURE! - in com.example.MainTest
+com.example.MainTest.testDeviceHandler  Time elapsed: 0.47 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class java.net.Socket.
+
+If you're not sure why you're getting this error, please open an issue on GitHub.
+
+
+Java               : 21
+JVM vendor name    : Eclipse Adoptium
+JVM vendor version : 21.0.4+7-LTS
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 21.0.4+7-LTS
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 14.4.1
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, interface java.lang.AutoCloseable, class java.net.Socket, interface java.io.Closeable]
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, interface java.lang.AutoCloseable, class java.net.Socket, interface java.io.Closeable]
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+Caused by: java.lang.IllegalStateException: 
+
+Byte Buddy could not instrument all classes within the mock's type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+Caused by: java.lang.IllegalArgumentException: Java 21 (65) is not supported by the current version of Byte Buddy which officially supports Java 20 (64) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+

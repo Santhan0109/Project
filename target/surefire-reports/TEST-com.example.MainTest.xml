@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MainTest" time="0.479" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/santhan/placementproject/manufacturing-plant/target/test-classes:/Users/santhan/placementproject/manufacturing-plant/target/classes:/Users/santhan/.m2/repository/org/mockito/mockito-core/5.0.0/mockito-core-5.0.0.jar:/Users/santhan/.m2/repository/net/bytebuddy/byte-buddy/1.12.22/byte-buddy-1.12.22.jar:/Users/santhan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.22/byte-buddy-agent-1.12.22.jar:/Users/santhan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/santhan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/santhan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/santhan/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/santhan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/santhan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/santhan/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/santhan/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/java/21/lib"/>
+    <property name="sun.java.command" value="/Users/santhan/placementproject/manufacturing-plant/target/surefire/surefirebooter7342816366771953889.jar /Users/santhan/placementproject/manufacturing-plant/target/surefire 2024-08-02T20-58-49_391-jvmRun1 surefire2049179533134933273tmp surefire_06073349930100234268tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/santhan/placementproject/manufacturing-plant/target/test-classes:/Users/santhan/placementproject/manufacturing-plant/target/classes:/Users/santhan/.m2/repository/org/mockito/mockito-core/5.0.0/mockito-core-5.0.0.jar:/Users/santhan/.m2/repository/net/bytebuddy/byte-buddy/1.12.22/byte-buddy-1.12.22.jar:/Users/santhan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.22/byte-buddy-agent-1.12.22.jar:/Users/santhan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/santhan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/santhan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/santhan/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/santhan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/santhan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/santhan/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/santhan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/santhan/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/java/21"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/santhan/placementproject/manufacturing-plant"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/santhan/placementproject/manufacturing-plant/target/surefire/surefirebooter7342816366771953889.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
+    <property name="user.name" value="santhan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.4+7"/>
+    <property name="localRepository" value="/Users/santhan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/q9/jkbpfn0d0n13bjvzn87g9fmw0000gn/T/"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="/Users/santhan/placementproject/manufacturing-plant"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/santhan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.4+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testDeviceHandler" classname="com.example.MainTest" time="0.47">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class java.net.Socket.
+
+If you're not sure why you're getting this error, please open an issue on GitHub.
+
+
+Java               : 21
+JVM vendor name    : Eclipse Adoptium
+JVM vendor version : 21.0.4+7-LTS
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 21.0.4+7-LTS
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 14.4.1
+
+
+You are seeing this disclaimer because Mockito is configured to create inlined mocks.
+You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, interface java.lang.AutoCloseable, class java.net.Socket, interface java.io.Closeable]
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, interface java.lang.AutoCloseable, class java.net.Socket, interface java.io.Closeable]
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+Caused by: java.lang.IllegalStateException: 
+
+Byte Buddy could not instrument all classes within the mock's type hierarchy
+
+This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
+ - Compiled by older versions of scalac
+ - Classes that are part of the Android distribution
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+Caused by: java.lang.IllegalArgumentException: Java 21 (65) is not supported by the current version of Byte Buddy which officially supports Java 20 (64) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
+	at com.example.MainTest.testDeviceHandler(MainTest.java:15)
+]]></error>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/santhan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.22/byte-buddy-agent-1.12.22.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
